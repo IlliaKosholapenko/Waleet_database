@@ -19,7 +19,7 @@ a:hover, a:active {
 
     <style>
     div {
-  width: 320px;
+  width: 800px;
   padding: 10px;
   border: 5px solid gray;
   margin-left: 500px;
@@ -35,16 +35,10 @@ a:hover, a:active {
              <a  href="http://127.0.0.1:5000/monitor"  target="_blank">Monitor expenditure</a>
              <a href="http://127.0.0.1:5000/index"  target="_blank">Create expenditire</a>
    <a href="http://127.0.0.1:5000/analyse"  target="_blank">See graphic</a>
-
 </div>
-<div align="center">
-             <a  href="http://127.0.0.1:5000/card"  target="_blank">Create a card</a>
-             <a  href="http://127.0.0.1:5000/monitor"  target="_blank">Monitor expenditure</a>
-             <a href="http://127.0.0.1:5000/index"  target="_blank">Create expenditire</a>
-
-</div>
-<h1 align="center">This day you payed:</h1>
 <div>
+<h1 align="center">This day you payed:</h1>
+
 {% for name in results %}
   {{ name }}
   {% endfor %}
